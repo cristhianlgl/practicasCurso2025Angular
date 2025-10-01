@@ -2,24 +2,9 @@
 <hr />
 <section class="row">
   <div class="col-12 col-sm-6">
-    <h3>Agregar Personaje: {{`${name()} - ${power()}`}}</h3>
-    <input
-      type="text"
-      class="form-control my-3"
-      placeholder="nombre"
-      [value]="name()"
-      (input)="name.set(txtName.value)"
-      #txtName
-    />
-    <input
-      type="number"
-      class="form-control my-3"
-      placeholder="Poder"
-      [value]="power()"
-      (input)="power.set(txtPower.valueAsNumber)"
-      #txtPower
-    />
-    <button class="mt-2 btn btn-primary" (click)="addCharacter()">Add</button>
+    <app-add-character
+      (emitCharacter)="addCharacter($event)"
+    ></app-add-character>
   </div>
   <div class="col-12 col-sm-6">
     <app-caracter-list
