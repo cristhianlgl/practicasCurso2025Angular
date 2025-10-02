@@ -1,5 +1,4 @@
 import { Component, inject} from '@angular/core';
-import { Character } from '../../models/Character.model';
 import { CaracterListComponent } from "../dragonball/caracter-list.component/caracter-list.component";
 import { AddCharacterComponent } from "../dragonball/caracter-list.component/add-character.component/add-character.component";
 import { CharacterService } from '../../services/character.service';
